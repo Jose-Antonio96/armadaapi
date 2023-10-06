@@ -1,9 +1,10 @@
 package com.armada.models;
 
 import jakarta.persistence.*;
-import com.armada.models.Division;
-import com.armada.models.Planeta;
 
+/**
+ * La clase "Soldado" representa un soldado con nombre clon, asignado a una división y un planeta.
+ */
 public class Soldado {
     private String clonName;
 

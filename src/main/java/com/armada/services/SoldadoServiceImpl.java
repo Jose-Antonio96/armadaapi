@@ -22,6 +22,15 @@ public class SoldadoServiceImpl implements SoldadoService {
 
     private String url = "http://localhost:8080/";
 
+    
+    /**
+     * La función "getSoldadoPlaneta" devuelve una lista de nombres de clones que pertenecen a un
+     * planeta específico.
+     * 
+     * @param planeta El parámetro "planeta" es un String que representa el nombre de un planeta.
+     * @return El método devuelve una lista de cadenas que contiene los nombres de los clones que
+     * pertenecen al planeta especificado.
+     */
     @Override
     public List<String> getSoldadoPlaneta(String planeta) {
         List<String> listaNombresClones = new ArrayList<>();
@@ -39,6 +48,13 @@ public class SoldadoServiceImpl implements SoldadoService {
         return listaNombresClones;
     }
 
+    /**
+     * La función `nuevoSoldado` verifica si un soldado ya existe en una lista de clones y agrega al
+     * soldado como un nuevo clon si no existe.
+     * 
+     * @param soldado El parámetro "soldado" es un objeto de tipo "Soldado". Contiene información sobre
+     * un soldado, como su nombre, división y planeta.
+     */
     @Override
     public void nuevoSoldado(Soldado soldado) {
         boolean existe = false;
